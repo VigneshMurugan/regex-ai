@@ -131,18 +131,7 @@
 }
 
 .ad-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--background-secondary);
-  border: 2px dashed var(--border);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  display: none; /* Hidden since real AdSense is configured */
 }
 
 .placeholder-content {
