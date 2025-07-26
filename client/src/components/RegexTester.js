@@ -12,22 +12,22 @@ const RegexTester = () => {
   const [error, setError] = useState('');
   const [isValid, setIsValid] = useState(true);
 
-  const validateRegex = (pattern) => {
-    try {
-      new RegExp(pattern, flags);
-      setIsValid(true);
-      setError('');
-    } catch (err) {
-      setIsValid(false);
-      setError(err.message);
-    }
-  };
-
   useEffect(() => {
+    const validateRegex = (pattern) => {
+      try {
+        new RegExp(pattern, flags);
+        setIsValid(true);
+        setError('');
+      } catch (err) {
+        setIsValid(false);
+        setError(err.message);
+      }
+    };
+
     if (regex) {
       validateRegex(regex);
     }
-  }, [regex, flags, validateRegex]);
+  }, [regex, flags]);
 
   const handleTest = async () => {
     if (!regex || !isValid) return;
