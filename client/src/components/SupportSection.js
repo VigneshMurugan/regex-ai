@@ -31,7 +31,7 @@ const SupportSection = () => {
 
   const handleBuyMeCoffee = () => {
     // Replace 'yourusername' with your actual Buy Me a Coffee username
-    window.open('https://www.buymeacoffee.com/yourusername', '_blank');
+    window.open('https://www.buymeacoffee.com/vignesh328g', '_blank');
   };
 
   const stats = [

@@ -27,7 +27,7 @@ const RegexTester = () => {
     if (regex) {
       validateRegex(regex);
     }
-  }, [regex, flags]);
+  }, [regex, flags, validateRegex]);
 
   const handleTest = async () => {
     if (!regex || !isValid) return;

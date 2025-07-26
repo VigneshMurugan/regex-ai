@@ -132,14 +132,14 @@ const Hero = () => {
             </div>
             <div className="code-content">
               <div className="code-line">
-                <span className="code-comment">// Input: "Match email addresses"</span>
+                <span className="code-comment">{`// Input: "Match email addresses"`}</span>
               </div>
               <div className="code-line">
                 <span className="code-keyword">const</span> <span className="code-variable">emailRegex</span> = 
                 <span className="code-string">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span>;
               </div>
               <div className="code-line">
-                <span className="code-comment">// ✅ Matches: user@example.com</span>
+                <span className="code-comment">{`// ✅ Matches: user@example.com`}</span>
               </div>
             </div>
           </div>
