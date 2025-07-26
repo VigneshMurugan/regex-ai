@@ -1,0 +1,20 @@
+{
+  "name": "regex-ai-generator",
+  "version": "1.0.0",
+  "description": "AI-powered regex generator with natural language processing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": ["regex", "ai", "generator", "natural-language", "openai"],
+  "author": "RegexAI Team",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.77.3"
+  }
+}
